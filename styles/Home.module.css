@@ -1,0 +1,184 @@
+.heroArea {
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+.heroSubTitle {
+  font-size: 28px;
+}
+
+.heroSelect {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.heroDescriptionArea {
+  padding: 0 0 0 50px;
+}
+
+.imageSelectorArea {
+  display: grid;
+  place-items: center;
+}
+
+.creatorArea {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px minmax(100px, 1fr) 300px);
+  gap: 20px;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.button {
+  padding: 10px 30px;
+  background-color: gold;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+
+.controls {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.titleBox {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #e5eafe;
+  border-radius: 5px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.descriptionBox {
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.croppedInfo {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 5fr;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.croppedRes {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.resets {
+  margin: 0 auto;
+  max-width: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.customInput {
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+}
+
+.downloadArea {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .creatorArea {
+    display: block;
+    margin-top: 30px;
+    padding: 0 20px;
+    padding-bottom: 120px;
+  }
+
+  .presetsArea {
+    display: none;
+    margin-bottom: 20px;
+  }
+
+  .cropperArea {
+    margin-bottom: 20px;
+  }
+
+  .croppedInfo {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+  }
+
+  .sectionTitle {
+    text-align: center;
+  }
+
+  .descriptionBox {
+    text-align: center;
+  }
+
+  .downloadArea {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heroTitle {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .heroSubTitle {
+    text-align: center;
+  }
+
+  .heroSelect {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+
+  .heroDescriptionArea {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .heroTitle {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+
+  .heroSubTitle {
+    display: none;
+  }
+
+  .heroSelect {
+    margin-top: 30px;
+  }
+
+  .resets {
+    max-width: 100%;
+  }
+
+  .downloadArea {
+    max-width: 100%;
+  }
+}
