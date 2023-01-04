@@ -1,0 +1,22 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+}
+
+.imageWrapper {
+  display: grid;
+  place-items: center;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+}
+
+.description {
+  font-size: 24px;
+  margin-left: -5%;
+}
